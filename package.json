@@ -11,14 +11,9 @@
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.14.20",
-    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18",
-    "styled-components": "^6.1.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -28,8 +23,5 @@
     "eslint-config-next": "14.0.4",
     "typescript": "^5",
     "vitest": "^1.0.2"
-  },
-  "resolutions": {
-    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   }
 }
