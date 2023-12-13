@@ -1,15 +1,19 @@
-import { Input } from './components/Input'
+import { Input } from '../components/Input'
 import Image from 'next/image'
 
 import HomeBg from '@/app/assets/home-bg.jpg'
 import Search from '@/app/assets/search.png'
+import { CategoryItem } from '../components/Category'
+import { categories } from '../../constants/categories'
+import { Filters } from './components/Filters'
+import { FestivalCard } from './components/Card'
 
 
 export default function Home() {
   return (
-    <section >
+    <main >
 
-      <div className='w-full relative'>
+      <section className='w-full relative'>
         <Image
           className='w-full h-96 object-cover object-center absolute -z-10 md:h-180'
           quality={100}
@@ -40,9 +44,43 @@ export default function Home() {
 
         </div>
 
-      </div>
+      </section>
 
-    </section>
+
+      <section className='p-12 grid grid-rows-2 gap-6 xl:grid-cols-6 md:grid-cols-4 '>
+        {categories.map((category) => (
+          <CategoryItem key={category.name} {...category} />
+
+        ))}
+      </section>
+
+
+      <section className='p-12 bg-gray-300'>
+        <h2 className='text-3xl font-semibold'>Popular</h2>
+
+        <Filters />
+
+        <div className='mt-12 flex flex-wrap gap-8'>
+
+          {Array(4).fill(0).map((_, index) => (
+            <FestivalCard key={index} />
+
+          ))}
+
+        </div>
+        <h2 className='text-3xl mt-12'>Next releases</h2>
+        <div className='mt-12 flex flex-wrap gap-8'>
+
+          {Array(4).fill(0).map((_, index) => (
+            <FestivalCard key={index} />
+
+          ))}
+
+        </div>
+
+      </section>
+
+    </main>
 
   )
 }
