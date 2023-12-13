@@ -1,12 +1,11 @@
-import { Input } from '../components/Input'
 import Image from 'next/image'
 
-import HomeBg from '@/app/assets/home-bg.jpg'
-import Search from '@/app/assets/search.png'
-import { CategoryItem } from '../components/Category'
-import { categories } from '../../constants/categories'
-import { Filters } from './components/Filters'
-import { FestivalCard } from './components/Card'
+import HomeBg from '@assets/home-bg.jpg'
+import Search from '@assets/search.png'
+import { categories } from '@constants/categories'
+import { Input } from '@components/Input'
+
+import { CategoryItem, FestivalCard, Filters } from './components'
 
 
 export default function Home() {

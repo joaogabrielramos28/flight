@@ -1,4 +1,4 @@
-import { ICategories } from "@/constants/categories"
+import { ICategories } from "@constants/categories"
 import Image from "next/image"
 import Link from "next/link"
 

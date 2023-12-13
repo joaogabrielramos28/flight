@@ -9,41 +9,41 @@ export const categories:ICategories[] = [
     {
         path: '/categories/concerts',
         name:"Concerts",
-        icon:require('../app/assets/song-note.png')
+        icon:require('@assets/song-note.png')
     },
     {
         path: '/categories/exhibitions',
         name:"Exhibitions",
-        icon:require('../app/assets/exhibition.png')
+        icon:require('@assets/exhibition.png')
     },
     {
         path: '/categories/festivals',
         name:"Festivals",
-        icon:require('../app/assets/festival.png')
+        icon:require('@assets/festival.png')
     },
     {
         path: '/categories/parties',
         name:"Parties",
-        icon:require('../app/assets/party.png')
+        icon:require('@assets/party.png')
     },
     {
         path: '/categories/movies',
         name:"Movies",
-        icon:require('../app/assets/movie.png')
+        icon:require('@assets/movie.png')
     },
     {
         path: '/categories/culinary',
         name:"Culinary",
-        icon:require('../app/assets/food.png')
+        icon:require('@assets/food.png')
     },
     {
         path: '/categories/sports',
         name:"Sports",
-        icon:require('../app/assets/sport.png')
+        icon:require('@assets/sport.png')
     },
     {
         path: '/categories/kids',
         name:"Kids",
-        icon:require('../app/assets/kid.png')
+        icon:require('@assets/kid.png')
     },
 ]

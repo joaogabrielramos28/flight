@@ -1,5 +1,5 @@
 import Image from "next/image"
-import BG from '@/app/assets/home-bg.jpg'
+import BG from '@assets/home-bg.jpg'
 
 
 export const FestivalCard = () => {

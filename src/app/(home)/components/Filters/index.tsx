@@ -1,6 +1,5 @@
 'use client'
-
-import { FiltersEnum, filters } from "@/constants/filters"
+import { FiltersEnum, filters } from "@constants/index"
 import { useState } from "react"
 
 export const Filters = () => {
