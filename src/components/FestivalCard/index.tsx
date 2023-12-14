@@ -4,8 +4,8 @@ import BG from '@assets/home-bg.jpg'
 
 export const FestivalCard = () => {
     return (
-        <div className="w-64 flex flex-col bg-white rounded-lg pb-6">
-            <Image src={BG} alt="" className="rounded-2xl" />
+        <div className="w-64 flex flex-col bg-white rounded-2xl pb-6">
+            <Image src={BG} alt="Festival image" className="rounded-2xl" />
             <div className="px-4 mt-4 ">
                 <h3 className="text-md font-semibold">
                     Echoes of Euphoria (DE)

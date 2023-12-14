@@ -3,9 +3,9 @@ import Image from 'next/image'
 import HomeBg from '@assets/home-bg.jpg'
 import Search from '@assets/search.png'
 import { categories } from '@constants/categories'
-import { Input } from '@components/Input'
+import { Input, FestivalCard } from '@components/index'
 
-import { CategoryItem, FestivalCard, Filters } from './components'
+import { CategoryItem, Filters } from './components'
 
 
 export default function Home() {
@@ -15,7 +15,6 @@ export default function Home() {
       <section className='w-full relative'>
         <Image
           className='w-full h-96 object-cover object-center absolute -z-10 md:h-180'
-          quality={100}
           src={HomeBg}
           alt=''
         />

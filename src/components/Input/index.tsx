@@ -1,8 +1,8 @@
 'use client'
-import { useRef } from "react";
+import { useRef, InputHTMLAttributes } from "react";
 
 
-type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
+type InputProps = InputHTMLAttributes<HTMLInputElement> & {
     children?: React.ReactNode
 }
 
