@@ -18,7 +18,7 @@ const variants = {
 export const Button = ({ children, variant = "outlined" }: ButtonProps) => {
 
     return (
-        <button className={`flex items-center gap-2 font-bold py-3 px-4 rounded-xl ${variants[variant]}`}>
+        <button className={`flex items-center gap-2 font-bold py-3 px-4 rounded-xl transition-opacity hover:opacity-50 ${variants[variant]}`}>
             {children}
         </button>
     );

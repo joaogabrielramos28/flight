@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
 
-      <section className='p-12 bg-gray-300'>
+      <section className='p-12 bg-gray-100'>
         <h2 className='text-3xl font-semibold'>Popular</h2>
 
         <Filters />

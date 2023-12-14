@@ -38,7 +38,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
             </div>
 
 
-            <div className="bg-gray-300 p-8 flex flex-wrap gap-6 justify-center">
+            <div className="bg-gray-100 p-8 flex flex-wrap gap-6 justify-center">
                 {Array(12).fill(0).map((_, index) => (
                     <FestivalCard key={index} />
                 ))}
