@@ -1,19 +1,22 @@
 
-import Background from "@assets/concert-bg.jpg"
 import { Button, FestivalCard } from "@components/index";
+
 
 import { Calendar, MapPin } from '@phosphor-icons/react/dist/ssr'
 import { GenreFilter } from "./components";
 import { capitalize } from "@utils/capitalize";
+import { categories } from "@constants/categories";
 
 
 
 export default function CategoryPage({ params }: { params: { slug: string } }) {
+    const backgroundImg = categories.find(category => category.name === capitalize(params.slug))?.background;
+
 
 
     return (
         <main className="w-full">
-            <div className=" px-8 w-full flex items-center h-180 bg-center" style={{ backgroundImage: `url(${Background.src})` }}>
+            <div className=" px-8 w-full flex items-center h-180 bg-center" style={{ backgroundImage: `url(${backgroundImg ? backgroundImg.src : ""})` }}>
                 <h1 className="text-white font-semibold text-6xl capitalize">{params.slug}</h1>
             </div>
 
@@ -30,7 +33,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
             </section>
 
             <div className="p-8 w-full">
-                <h2 className="text-center text-2xl font-semibold">Music genres</h2>
+                <h2 className="text-center text-2xl font-semibold">Categories</h2>
                 <GenreFilter type={capitalize(params.slug)} />
             </div>
 

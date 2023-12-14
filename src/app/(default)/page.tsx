@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
 import HomeBg from '@assets/home-bg.jpg'
-import Search from '@assets/search.png'
 import { categories } from '@constants/categories'
 import { Input, FestivalCard } from '@components/index'
 
 import { CategoryItem, Filters } from './components'
+import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
           <div className='w-96 mt-8 md:w-180'>
             <Input id='test' placeholder='Search for event' >
               <button className="rounded-full bg-secondary p-4">
-                <Image src={Search} alt='Lupa de pesquisa' className='w-5' />
+                <MagnifyingGlass size={22} className='text-white' />
               </button>
             </Input>
             <p className='mt-8 text-center text-white text-lg '>
